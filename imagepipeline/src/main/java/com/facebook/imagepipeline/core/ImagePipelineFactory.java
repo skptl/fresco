@@ -285,7 +285,7 @@ public class ImagePipelineFactory {
     return mImageDecoder;
   }
 
-  private BufferedDiskCache getMainBufferedDiskCache() {
+  public BufferedDiskCache getMainBufferedDiskCache() {
     if (mMainBufferedDiskCache == null) {
       mMainBufferedDiskCache =
           new BufferedDiskCache(
